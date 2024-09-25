@@ -13,6 +13,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -303,7 +309,7 @@
           </div>
         </div>
 
-        <div
+        <!-- <div
           class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
         >
           <div class="col mt-3">
@@ -379,6 +385,86 @@
                 class="img-fluid w-100 rounded"
               />
             </a>
+          </div>
+        </div> -->
+
+        <!-- Swiper Container -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide" data-aos="fade-up">
+              <a
+                href="img/gallery/thumbnail/1.png"
+                data-toggle="lightbox"
+                data-caption="Prewedding 1"
+              >
+                <img
+                  src="img/gallery/thumbnail/1.png"
+                  alt="foto"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide" data-aos="fade-up">
+              <a
+                href="img/gallery/thumbnail/2.png"
+                data-toggle="lightbox"
+                data-caption="Prewedding 2"
+              >
+                <img
+                  src="img/gallery/thumbnail/2.png"
+                  alt="foto"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide" data-aos="fade-up">
+              <a
+                href="img/gallery/thumbnail/3.png"
+                data-toggle="lightbox"
+                data-caption="Prewedding 3"
+              >
+                <img
+                  src="img/gallery/thumbnail/3.png"
+                  alt="foto"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide" data-aos="fade-up">
+              <a
+                href="img/gallery/thumbnail/4.png"
+                data-toggle="lightbox"
+                data-caption="Prewedding 4"
+              >
+                <img
+                  src="img/gallery/thumbnail/4.png"
+                  alt="foto"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide" data-aos="fade-up">
+              <a
+                href="img/gallery/thumbnail/5.png"
+                data-toggle="lightbox"
+                data-caption="Prewedding 5"
+              >
+                <img
+                  src="img/gallery/thumbnail/5.png"
+                  alt="foto"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -782,6 +868,30 @@
       namaContainers.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
       document.querySelector("#name").value = nama;
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        initialSlide: 2,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
 
     <script>
