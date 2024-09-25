@@ -387,16 +387,16 @@
     </section>
 
     <!-- RSVP -->
-    <!--     <section id="rsvp" class="rsvp">
+    <section id="rsvp" class="rsvp">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2>Konfirmasi Kehadiran</h2>
             <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
           </div>
-        </div> -->
+        </div>
 
-    <!-- <form
+        <!-- <form
           class="row row-cols-lg-auto g-3 align-items-center justify-content-center"
           method="POST"
           action="https://script.google.com/macros/s/AKfycbx85WlD3Zvsq_rmVbzmS3TMGZ-JDFrF5GWpbEBZNjJTy1PcDXGrOcmAL06Rrh8U1M3Z/exec"
@@ -439,7 +439,7 @@
           </div>
         </form> -->
 
-    <!--         <form id="rsvpForm" class="rsvp-form">
+        <form id="rsvpForm" class="rsvp-form">
           <div class="col-12">
             <label for="name" class="label">Nama:</label>
             <input type="text" id="name" name="name" class="input" required />
@@ -483,7 +483,7 @@
         <div class="comments-container" id="commentsContainer"></div>
         <div class="pagination" id="pagination"></div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Gifts -->
     <section id="gifts" class="gifts">
@@ -770,10 +770,10 @@
       // namaContainer.innerText = pronoun + "" + nama;
       namaContainers.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
-      // document.querySelector("#name").value = nama;
+      document.querySelector("#name").value = nama;
     </script>
 
-    <!--     <script>
+    <script>
       const form = document.getElementById("rsvpForm");
       const commentsContainer = document.getElementById("commentsContainer");
       const paginationContainer = document.getElementById("pagination");
@@ -874,6 +874,6 @@
           paginationContainer.appendChild(button);
         }
       }
-    </script> -->
+    </script>
   </body>
 </html>
