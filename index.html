@@ -724,11 +724,17 @@
         };
 
         rootElement.style.scrollBehavior = "auto";
+
+        // Mencegah scroll dengan mengubah overflow
+        document.body.style.overflow = "hidden";
       }
 
       function enableScroll() {
         window.onscroll = function () {};
         rootElement.style.scrollBehavior = "smooth";
+
+        // Aktifkan kembali scroll dengan mengatur overflow
+        document.body.style.overflow = "auto";
         // localStorage.setItem("opened", "true");
         playAudio();
       }
@@ -757,6 +763,11 @@
       // if (!localStorage.getItem("opened")) {
       //   disableScroll();
       // }
+
+      // Scroll ke atas saat halaman dimuat ulang
+      window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+      });
 
       disableScroll();
     </script>
