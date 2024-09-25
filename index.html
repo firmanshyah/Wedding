@@ -740,6 +740,7 @@
 
         // Mencegah scroll dengan mengubah overflow
         document.body.style.overflowY = "hidden";
+        document.body.style.overflowX = "hidden";
       }
 
       function enableScroll() {
@@ -748,6 +749,7 @@
 
         // Aktifkan kembali scroll dengan mengatur overflow
         document.body.style.overflowY = "auto";
+        document.body.style.overflowX = "hidden";
         // localStorage.setItem("opened", "true");
         playAudio();
       }
