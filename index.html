@@ -475,8 +475,10 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+            <h2 data-aos="fade-up">Konfirmasi Kehadiran</h2>
+            <p data-aos="fade-up">
+              Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
+            </p>
           </div>
         </div>
 
@@ -525,22 +527,34 @@
 
         <form id="rsvpForm" class="rsvp-form">
           <div class="col-12">
-            <label for="name" class="label">Nama:</label>
-            <input type="text" id="name" name="name" class="input" required />
+            <label for="name" class="label" data-aos="fade-down">Nama:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="input"
+              required
+              data-aos="flip-up"
+            />
           </div>
 
           <div class="col-12">
-            <label for="message" class="label">Ucapan:</label>
+            <label for="message" class="label" data-aos="fade-down"
+              >Ucapan:</label
+            >
             <textarea
               id="message"
               name="message"
               class="textarea"
               required
+              data-aos="flip-up"
             ></textarea>
           </div>
 
-          <label class="label">Konfirmasi Kehadiran:</label>
-          <div class="radio-group">
+          <label class="label" data-aos="fade-down"
+            >Konfirmasi Kehadiran:</label
+          >
+          <div class="radio-group" data-aos="zoom-in">
             <input
               type="radio"
               id="hadir"
@@ -561,11 +575,17 @@
             <label for="tidak_hadir" class="radio-label">Tidak Hadir</label>
           </div>
 
-          <button type="submit" class="submit-button btn">Kirim</button>
+          <button type="submit" class="submit-button btn" data-aos="fade-right">
+            Kirim
+          </button>
         </form>
 
-        <div class="comments-container" id="commentsContainer"></div>
-        <div class="pagination" id="pagination"></div>
+        <div
+          class="comments-container"
+          id="commentsContainer"
+          data-aos="flip-up"
+        ></div>
+        <div class="pagination" id="pagination" data-aos="fade-right"></div>
       </div>
     </section>
 
